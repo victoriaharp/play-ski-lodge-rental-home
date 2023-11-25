@@ -1,0 +1,14 @@
+<section class="bg-moonstone-50 flex flex-col h-[100vh] bg-cover bg-center relative border-b border-moonstone">
+
+    <div style="background-image: url('{{page.header-image}}'); background-position: {{page.background-position}};" class="absolute w-[65%] left-[35%] h-full bg-cover"></div>
+
+    {% include header-nav.html %}
+
+    <div class="flex flex-col grow justify-center">
+        <hr class="border border-moonstone pl-0 mb-5">
+        <div class="px-10p relative z-50">
+            <h2 class="text-moonstone font-light font-sans uppercase ">{{page.banner-supheading}}</h1>
+            <h1 class="text-moonstone font-serif tracking-widest font-light text-7xl">{{page.banner-heading}}</h1>
+        </div>
+    </div>
+</section>

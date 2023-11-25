@@ -1,0 +1,261 @@
+
+/* ----------- Color Variables --------- */
+/* Looking for the color variables? They have been moved to the inline-styles file in the _includes folder, and pull variables from the site-settings folder in the _data folder.  */
+
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom CSS */
+
+html {
+  scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+}
+/* to override the momence purple color, we have to override their color variable here */
+:root{
+  --momence-primary-050: theme(colors.moonstone.50);
+  --momence-primary-900: theme(colors.moonstone.900);
+  --momence-primary-800: theme(colors.moonstone.800);
+  --momence-primary-700: theme(colors.moonstone.700);
+  --momence-primary-600: theme(colors.moonstone.600);
+  --momence-primary-500: theme(colors.moonstone.500);
+  --momence-primary-400: theme(colors.moonstone.400);
+  --momence-primary-300: theme(colors.moonstone.300);
+  --momence-primary-200: theme(colors.moonstone.200);
+  --momence-primary-100: theme(colors.moonstone.100);
+  --momence-background: transparent;
+  --momence-white: transparent;
+}
+
+
+h1, h2, h3, h4, h5 {
+  line-height: 1;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+hr{
+width: calc(10vw + 10.2rem);
+}
+/* form */
+input, label, textarea{
+  @apply w-full block;
+}
+form input, form textarea{
+  @apply py-2 px-0 text-sm bg-transparent focus:outline-none focus:ring-0; 
+}
+/* tailwind outline-none makes it transparent so it still appears in the duration */
+form imput:focus{
+  outline: none;
+}
+/* apply borders to the bottom of each div */
+form > div{
+  @apply border-b border-moonstone-500;
+}
+/* except the last child button */
+form > div:last-child{
+  @apply border-none;
+}
+input, textarea{
+  @apply bg-transparent;
+}
+
+p{
+  margin-bottom: 1.25rem;
+}
+
+.portrait{
+  aspect-ratio: .66;
+}
+.landscape{
+  aspect-ratio: 1.25;
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/* remove corners */
+#momence-embed #momence-plugin-host-schedule * {
+  @apply rounded-none font-sans border-moonstone text-moonstone;
+}
+/* changing the class title font */
+#momence-embed #momence-plugin-host-schedule h4 {
+  @apply font-serif;
+}
+/* hiding images */
+#momence-embed #momence-plugin-host-schedule .momence-host_schedule-session_list-item-image.jQbyba{
+  display: none;
+}
+
+#momence-embed #momence-plugin-host-schedule .kZbVww.momence-host_schedule-session_list-item-image{
+  display: none;
+}
+/* border between each description and price */
+#momence-embed #momence-plugin-host-schedule .kllAKy {
+  @apply hidden ;
+}
+/* buttons */
+#momence-embed #momence-plugin-host-schedule .EenGE{
+  @apply text-white hover:text-white;
+}
+/* remove name */
+#momence-embed #momence-plugin-host-schedule .eyVeLy.momence-host_schedule-session_list-item-info.momence-session-teacher{
+  display: none;
+}
+/* remove text */
+#momence-embed #momence-plugin-host-schedule .kJTgQj.momence-host_schedule-session_list-item-description{
+  display: none;
+}
+/* remove class */
+#momence-embed #momence-plugin-host-schedule .igpvGC.momence-host_schedule-session_list-item-type{
+  display: none;
+}
+/* remove bottom text */
+#momence-embed #momence-plugin-host-schedule .brZsCM.momence-host_schedule-powered_by_momence{
+  display: none;
+}
+/* remove time zone */
+#momence-embed #momence-plugin-host-schedule .kSZlqf.momence-host_schedule-sys_row{
+  display: none;
+}
+/* removing borders from next and prev buttons */
+#momence-embed #momence-plugin-host-schedule .momence-button{
+    border: none;
+}
+/* remove underline from classes */
+#momence-embed #momence-plugin-host-schedule .momence-event_type_select-button .kZOxIB{
+  display: none;
+}
+#momence-embed #momence-plugin-host-schedule .henUQy.momence-event_type_select-button{
+  @apply font-serif text-4xl pb-5;
+}
+/* #momence-embed #momence-plugin-host-schedule .cJpMNz{
+  @apply bg-moonstone;
+} */
+
+/* #momence-embed #momence-plugin-host-schedule .dImvNj{
+  @apply bg-beige;
+}
+
+#momence-embed #momence-plugin-host-schedule .gfbZfI{
+  @apply bg-beige;
+}
+
+#momence-embed #momence-plugin-host-schedule .iIHip{
+  @apply bg-beige;
+}
+#momence-embed #momence-plugin-host-schedule .caXlZz{
+  @apply bg-beige;
+}
+#momence-embed #momence-plugin-host-schedule .henUQy{
+  @apply bg-beige;
+}
+.hkEhZv .momence-select-button */
+@layer utilities{
+  .rotate-text-180{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    @apply rotate-180;
+  }
+
+  
+}
+
+
+/* hamburger menu styles */
+
+.burger-button {
+  position:fixed;
+  top: 2vh;
+  right: 2vh;
+  z-index: 90;
+  padding: 8px;
+}
+/*this is where you can change the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid var(--momence-primary-500);
+  background-color: #C97324;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  @apply bg-moonstone border-moonstone
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+  transform: rotateZ(2700deg);
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    @apply bg-moonstone-50;
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    left:100vw;
+    right: -100vw;
+    bottom: 0vh;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 80;
+    transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  left:50vw;
+  right:0;
+}
+.burger-menu a {
+  @apply text-moonstone;
+  text-decoration: none;
+  font-size: 20px;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
+
+/* 
+*{
+  animation: spin 1s linear infinite alternate;
+}
+
+
+@keyframes spin {
+  from {transform: rotate(-.5deg);}
+  to   {transform: rotate(.5deg);}
+} */

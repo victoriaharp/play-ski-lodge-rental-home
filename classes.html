@@ -1,0 +1,21 @@
+---
+layout: default
+header-image: /images/studio-8.jpg
+background-position: 63% 16%
+banner-supheading: 
+banner-heading: Our Classes
+banner-subheading:
+---
+
+{% include split-banner.html %}
+
+<section class="px-10p py-5p bg-beige">
+    <div class="flex flex-nowrap gap-8 mx-auto overflow-x-scroll relative">
+        {% for item in site.data.classes %}
+
+            {% include class-loop-item.html %}
+
+        {% endfor %}
+    </div>
+</section>
+

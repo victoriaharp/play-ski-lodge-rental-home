@@ -1,0 +1,25 @@
+    <div class="basis-[75%] md:basis-30p shrink-0 relative pb-5 break-inside-avoid border-2 border-moonstone">
+        <div class="relative break-inside-avoid">
+            <div class=" relative min-h-50 border border-moonstone  m-5">
+                <img src="{{item.image}}" class="absolute inset-0 w-full h-full object-cover object-center">
+            </div>
+            <h4 class="font-serif text-xl uppercase text-center pb-3 border-b border-moonstone text-moonstone font-normal">{{item.name}}</h4>
+        </div>
+
+        <div class="p-5 text-center">
+            <p class="font-sans text-sm text-center text-moonstone">{{item.description}}</p>
+            <a href="/schedule.html" class="bg-moonstone text-moonstone-50 font-sans px-5 py-1 justify-center uppercase border  border-moonstone-50 hover:text-moonstone hover:bg-moonstone-50 hover:border-moonstone transition tracking-widest">Sign Up</a>
+        </div>
+    </div>
+<!-- 
+    <div class="{% if post.aspect-ratio == 'aspect-square' %} basis-60p md:basis-30p {% else %} basis-90p md:basis-45p {% endif %} shrink-0 relative pb-5 break-inside-avoid">
+        <div class="bg-cover relative {{ post.aspect-ratio }}">
+            <img src="{{ post.featured_image }}" alt="{{post.title}}"class="absolute inset-0 w-full h-full object-cover ">
+        </div>
+        
+        <div class="p-2">
+            <h4 class="uppercase font-montserrat"> {{post.title}} </h4>
+            <p class="font-montserrat line-clamp-4"> {{post.description}} </p>
+            <a href="{{post.url}}" class="uppercase font-italiana border-b border-dark-grey">  Read More </a>  
+        </div>
+    </div> -->

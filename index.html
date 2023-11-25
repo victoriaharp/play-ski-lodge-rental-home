@@ -1,0 +1,58 @@
+---
+layout: default
+header-image: /images/studio-4.jpg
+banner-supheading: Welcome to
+banner-heading: The Cool Gym
+banner-subheading:
+---
+
+{% include header-banner.html %}
+
+<!-- index grid -->
+
+<section class="bg-moonstone grid md:grid-cols-2 items-center gap-[1px] border-t border-b border-moonstone">
+    <!-- first row -->
+    <div class="text-moonstone bg-moonstone-50 md:min-h-screen p-10p flex md:items-end">
+        <div class="pr-5p">
+            <h2 class="editable font-serif text-4xl font-normal tracking-widest">Duis Aute Irure</h2>
+            <p class="font-sans editable pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident! Autem temporibus a quo placeat sed dolorem incidunt quidem quas quod, minima nihil facilis ducimus, expedita fuga eaque architecto.</p>
+            <a href="#" class="bg-moonstone text-moonstone-50 font-sans px-5 py-1 uppercase">Sign Up</a>
+        </div>
+    </div>
+    <img src="/images/studio-10.jpg" class="object-cover object-top inset-0 w-full h-full max-h-screen hidden md:block" style="object-position: 50% 50%;">
+
+    <!-- second row -->
+    <div class="flex items-end min-h-screen bg-cover bg-center inset-0 w-full h-full" style="background-image: url(/images/studio-14.jpg); background-position: 50% 100%;">
+        <div class="p-10p">
+            <h3 class="editable font-serif text-4xl text-moonstone-50 tracking-widest font-normal">Our Classes</h3>
+            <p class="font-sans editable text-moonstone-50 pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus rem magnam molestiae quisquam distinctio magni tempore, eveniet libero. Labore accusamus non optio porro placeat numquam fuga totam minima perspiciatis harum.</p>
+            <a href="/classes" class="bg-moonstone text-moonstone-50 font-sans px-5 py-1 uppercase tracking-widest">Find Out More</a>
+        </div>
+        
+    </div>
+    <div class="grid grid-cols-2 gap-[1px] bg-moonstone md:min-h-screen">
+        {% for item in site.data.classes %}
+        <div class="flex md:items-end bg-moonstone-50">
+            <div class=" text-moonstone p-5p">
+                <h3 class="font-serif text-xl tracking-widest font-normal">{{item.name}}</h3>
+                <p class="font-sans">{{item.description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+        
+    </div>
+
+</section>
+
+
+<!-- Testimonials section -->
+<section class="p-5p bg-white">
+    <h2 class="font-serif text-4xl text-moonstone tracking-widest font-normal">Testimonials</h2>
+    <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
+        {% for item in site.data.testimonials %}
+
+            {% include testimonial-loop-item.html %}
+
+        {% endfor %}
+    </div>
+</section>
