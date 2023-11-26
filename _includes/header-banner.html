@@ -1,8 +1,8 @@
-<section class="flex flex-col h-[100vh] bg-cover bg-center relative mix-blend-darken" style="background-image: url({{page.header-image}}); background-position: 44% 50%;">
+{% include header-nav.html %}
+<section class="flex h-screen bg-cover bg-center " style="background-image: url({{page.header-image}}); background-position: 50% 50%;">
 
-    {% include header-nav.html %}
 
-    <div class="flex flex-col justify-center grow">
+    <div class="flex flex-col justify-center grow ">
         <hr class="border border-dark-blue  pl-0 mb-5">
         <div class="px-10p">
             <h2 class="text-dark-blue font-base font-sans uppercase tracking-widest">{{page.banner-supheading}}</h1>
