@@ -12,7 +12,7 @@ banner-subheading: The Ultimate Ski-in Ski-out Experience
 
 <section class="bg-blue grid md:grid-cols-2 items-center gap-[1px] border-t border-b border-blue">
     <!-- first row -->
-    <div class="text-blue bg-light-blue md:min-h-screen p-10p flex md:items-end">
+    <div class="text-dark-blue bg-light-blue md:min-h-screen p-10p flex md:items-end">
         <div class="pr-5p">
             <h2 class="editable font-serif text-4xl font-normal tracking-widest">Your Home Away From Home</h2>
             <p class="font-sans editable pb-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident! Autem temporibus a quo placeat sed dolorem incidunt quidem quas quod, minima nihil facilis ducimus, expedita fuga eaque architecto.</p>
@@ -33,7 +33,7 @@ banner-subheading: The Ultimate Ski-in Ski-out Experience
     <div class="grid grid-cols-2 gap-[1px] bg-blue md:min-h-screen">
         {% for item in site.data.features %}
         <div class="flex md:items-end bg-light-blue">
-            <div class=" text-blue p-5p">
+            <div class=" text-dark-blue p-5p">
                 <h3 class="font-serif text-xl tracking-widest font-normal">{{item.name}}</h3>
                 <p class="font-sans">{{item.description}}</p>
             </div>
@@ -47,11 +47,11 @@ banner-subheading: The Ultimate Ski-in Ski-out Experience
 
 <!-- Testimonials section -->
 <section class="p-5p bg-white">
-    <h2 class="font-serif text-4xl text-blue tracking-widest font-normal">Recent Reviews</h2>
+    <h2 class="font-serif text-4xl text-dark-blue tracking-widest font-normal">Recent Reviews</h2>
     <div class="flex flex-nowrap gap-5 mx-auto overflow-x-scroll pl-1 pr-0 relative">
         {% for item in site.data.reviews %}
 
-            {% include testimonial-loop-item.html %}
+            {% include review-loop-item.html %}
 
         {% endfor %}
     </div>

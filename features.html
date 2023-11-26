@@ -1,9 +1,9 @@
 ---
 layout: default
-header-image: /images/ski-
+header-image: /images/ski-6.png
 background-position: 63% 16%
 banner-supheading: 
-banner-heading: Our Classes
+banner-heading: Features
 banner-subheading:
 ---
 
@@ -11,9 +11,9 @@ banner-subheading:
 
 <section class="px-10p py-5p bg-beige">
     <div class="flex flex-nowrap gap-8 mx-auto overflow-x-scroll relative">
-        {% for item in site.data.classes %}
+        {% for item in site.data.features %}
 
-            {% include class-loop-item.html %}
+            {% include feature-loop-item.html %}
 
         {% endfor %}
     </div>

@@ -27,8 +27,8 @@ html {
   --momence-background: transparent;
   --momence-white: transparent;
   --blue: #99B8D6;
-  --darkblue: #213A52;
-  --lightblue: #F0F5F9;
+  --dark-blue: #213A52;
+  --light-blue: #F0F5F9;
 }
 
 
@@ -180,14 +180,14 @@ img{
 /*this is where you can change the color of the buttons*/
 .burger-button span{
   width: 40px;
-  border: 2px solid var(--momence-primary-500);
-  background-color: #C97324;
+  border: 2px solid var(--dark-blue);
+  /* background-color: #C97324; */
   display: block;
   border-radius: 22px;
   transition: 2s;
 }
 .burger-button.active span{
-  @apply bg-blue border-blue
+  @apply bg-dark-blue border-dark-blue
 }
 
 .burger-top, .burger-bottom{
@@ -209,7 +209,7 @@ img{
 }
 
 .burger-button.active .burger-middle{
-  transform: rotateZ(2700deg);
+  transform: rotateZ(360);
   border-color: rgba(0,0,0,0);
   background-color:rgba(0,0,0,0);
 }
@@ -243,7 +243,7 @@ img{
   right:0;
 }
 .burger-menu a {
-  @apply text-blue;
+  @apply text-dark-blue;
   text-decoration: none;
   font-size: 20px;
   display:block;

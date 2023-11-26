@@ -96,9 +96,9 @@ module.exports = {
           900: '#294866',
           950: '#213A52'
         },
-        "blue": "var(--#99B8D6)",
-        "light-blue": "var(--#F0F5F9)",
-        "dark-blue": "var(--#213A52)",
+        'blue': 'var(--blue)',
+        'light-blue': 'var(--light-blue)',
+        'dark-blue': 'var(--dark-blue)',
 
       },
     },

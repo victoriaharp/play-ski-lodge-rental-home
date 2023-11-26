@@ -1,8 +1,8 @@
-- link: /classes
-  name: Our Classes
+- link: /features
+  name: Our Features
 
-- link: /schedule
-  name: Schedule
+- link: /booking
+  name: Bookings
   
 - link: /contact
   name: Contact
