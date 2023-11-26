@@ -12,20 +12,23 @@
 html {
   scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
 }
-/* to override the momence purple color, we have to override their color variable here */
+/* to override the momence color, we have to override their color variable here */
 :root{
-  --momence-primary-050: theme(colors.moonstone.50);
-  --momence-primary-900: theme(colors.moonstone.900);
-  --momence-primary-800: theme(colors.moonstone.800);
-  --momence-primary-700: theme(colors.moonstone.700);
-  --momence-primary-600: theme(colors.moonstone.600);
-  --momence-primary-500: theme(colors.moonstone.500);
-  --momence-primary-400: theme(colors.moonstone.400);
-  --momence-primary-300: theme(colors.moonstone.300);
-  --momence-primary-200: theme(colors.moonstone.200);
-  --momence-primary-100: theme(colors.moonstone.100);
+  --momence-primary-050: theme(colors.polo.50);
+  --momence-primary-900: theme(colors.polo.900);
+  --momence-primary-800: theme(colors.polo.800);
+  --momence-primary-700: theme(colors.polo.700);
+  --momence-primary-600: theme(colors.polo.600);
+  --momence-primary-500: theme(colors.polo.500);
+  --momence-primary-400: theme(colors.polo.400);
+  --momence-primary-300: theme(colors.polo.300);
+  --momence-primary-200: theme(colors.polo.200);
+  --momence-primary-100: theme(colors.polo.100);
   --momence-background: transparent;
   --momence-white: transparent;
+  --blue: #99B8D6;
+  --darkblue: #213A52;
+  --lightblue: #F0F5F9;
 }
 
 
@@ -51,7 +54,7 @@ form imput:focus{
 }
 /* apply borders to the bottom of each div */
 form > div{
-  @apply border-b border-moonstone-500;
+  @apply border-b border-dark-blue;
 }
 /* except the last child button */
 form > div:last-child{
@@ -79,7 +82,7 @@ img{
 
 /* remove corners */
 #momence-embed #momence-plugin-host-schedule * {
-  @apply rounded-none font-sans border-moonstone text-moonstone;
+  @apply rounded-none font-sans border-blue text-blue;
 }
 /* changing the class title font */
 #momence-embed #momence-plugin-host-schedule h4 {
@@ -133,7 +136,7 @@ img{
   @apply font-serif text-4xl pb-5;
 }
 /* #momence-embed #momence-plugin-host-schedule .cJpMNz{
-  @apply bg-moonstone;
+  @apply bg-blue;
 } */
 
 /* #momence-embed #momence-plugin-host-schedule .dImvNj{
@@ -184,7 +187,7 @@ img{
   transition: 2s;
 }
 .burger-button.active span{
-  @apply bg-moonstone border-moonstone
+  @apply bg-blue border-blue
 }
 
 .burger-top, .burger-bottom{
@@ -220,7 +223,7 @@ img{
 }
 
 .burger-menu {
-    @apply bg-moonstone-50;
+    @apply bg-light-blue;
     display: flex;
     position: fixed;
     top: 0vh;
@@ -240,7 +243,7 @@ img{
   right:0;
 }
 .burger-menu a {
-  @apply text-moonstone;
+  @apply text-blue;
   text-decoration: none;
   font-size: 20px;
   display:block;

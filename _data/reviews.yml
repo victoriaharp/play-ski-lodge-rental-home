@@ -1,0 +1,23 @@
+- image: /images/ski-1.png
+  name: Guest 1
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.
+
+- image: /images/ski-2.png
+  name: Guest 2
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.
+
+- image: /images/ski-3.png
+  name: Guest 3
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.
+  
+- image: /images/ski-4.png
+  name: Guest 4
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.
+
+- image: /images/ski-5.png
+  name: Guest 5
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.
+
+- image: /images/ski-6.png
+  name: Guest 6
+  review: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, eos sunt molestias vero ratione laboriosam similique officia delectus adipisci non quis ipsam consequuntur harum temporibus omnis aut saepe quo qui.

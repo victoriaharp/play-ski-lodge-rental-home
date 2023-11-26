@@ -1,12 +1,12 @@
-  - name: Kickboxing
+  - name: Ski-in Ski-out
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident!
-    image: /images/studio-10.jpg
-  - name: Vinyasa Flow
+    image: /images/ski-2.png
+  - name: Sleeps 16
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident!
-    image: /images/studio-9.jpg
-  - name: REV Cycling
+    image: /images/ski-11.png
+  - name: Hot Tub & Pool
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident!
-    image: /images/studio-13.jpg
-  - name: Weight Lifting
+    image: /images/ski-16.png
+  - name: Bar & Kitchen
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, reprehenderit provident!
-    image: /images/studio-11.jpg
+    image: /images/ski-9.png
